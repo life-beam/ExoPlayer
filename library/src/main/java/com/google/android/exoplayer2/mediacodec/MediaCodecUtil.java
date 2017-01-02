@@ -226,7 +226,7 @@ public final class MediaCodecUtil {
             || "MP3Decoder".equals(name))) {
       return false;
     }
-    // Work around https://github.com/google/ExoPlayer/issues/398
+    // Not compatible with Vi prompt playback; cuts off the ends of MP3 files.
     if ("OMX.SEC.MP3.Decoder".equals(name)) {
       return false;
     }

@@ -227,7 +227,7 @@ public final class MediaCodecUtil {
       return false;
     }
     // Work around https://github.com/google/ExoPlayer/issues/398
-    if (Util.SDK_INT < 18 && "OMX.SEC.MP3.Decoder".equals(name)) {
+    if ("OMX.SEC.MP3.Decoder".equals(name)) {
       return false;
     }
     // Work around https://github.com/google/ExoPlayer/issues/1528
